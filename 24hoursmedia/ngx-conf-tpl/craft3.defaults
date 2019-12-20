@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# define default env vars for substitution in the corresponding the .conf
+export document_root=${document_root:-/var/www/html/web}
+export phpfpm_host=${phpfpm_host:-php}
+export phpfpm_port=${phpfpm_port:-9000}
