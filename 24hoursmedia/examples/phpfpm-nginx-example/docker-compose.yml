@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+
+  nginx:
+    image: 24hoursmedia/nginx4devs:latest
+    environment:
+      config_handle: symfony4
+      phpfpm_host: php
+      phpfpm_port: 9000
+      document_root: /var/www/html/public
+    ports:
+      - 8803:80
+    depends_on:
+      - php
+    volumes:
+      - ./html:/var/www/html:ro
+
+  php:
+    image: 24hoursmedia/pfpm73rutor:latest
+    volumes:
+      - ./html:/var/www/html:ro
