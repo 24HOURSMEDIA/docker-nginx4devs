@@ -43,6 +43,10 @@ services:
       - ./html:/var/www/html:ro
 ```
 
+## Including own modules
+
+You can place .conf files in /etc/nginx/app/*.conf.
+They will get included in in the server block by one of the default configurations
 
 ## Configuration
 

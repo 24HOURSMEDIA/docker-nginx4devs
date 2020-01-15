@@ -10,6 +10,9 @@ RUN apk add gettext
 
 COPY 24hoursmedia /24hoursmedia
 
+# this will contain includes in every vhost, you can mount/copy files here
+RUN mkdir /etc/nginx/app
+
 WORKDIR /var/www/html
 CMD ["sh", "/24hoursmedia/run.sh"]
 
