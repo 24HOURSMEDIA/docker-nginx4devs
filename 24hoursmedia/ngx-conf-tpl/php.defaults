@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# define default env vars for substitution in the corresponding the .conf
+export document_root=${document_root:-/var/www/html}
