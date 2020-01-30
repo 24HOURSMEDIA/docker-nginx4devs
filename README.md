@@ -9,9 +9,13 @@ You can configure nginx by passing environment variables.
 
 By default, minimal-configuration examples are provided for:
 
-- nginx/php-fpm with Symfony 4
-- nginx/php-fpm with Symfony 3
-- nginx/php-fpm with Craft CMS 3
+- *symfony4*: nginx/php-fpm with Symfony 4
+- *symfony3*: nginx/php-fpm with Symfony 3
+- *craft3*: nginx/php-fpm with Craft CMS 3
+- *craft2*: nginx/php-fpm with Craft CMS 2
+- *php*: nginx/php-fpm with just php
+
+Specify the config handle in the environment variable config_handle.
 
 ## Examples
 
