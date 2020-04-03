@@ -62,18 +62,23 @@ The other environment variables depend on the template.
 
 #### Available environment variables:
 
-| name  |  default | description  |
-|---|---|---|
-|  document_root | /var/www/html/public | The document root for nginx  |
-|  phpfpm_host | php |  hostname for the php fpm server, usually the service name in docker-compose |
-|  phpfpm_port | 9000  | the port that php-fpm is running on |
+| name                      | default              | description                                                                 |
+|:--------------------------|:---------------------|:----------------------------------------------------------------------------|
+| document_root             | /var/www/html/public | The document root for nginx                                                 |
+| phpfpm_host               | php                  | hostname for the php fpm server, usually the service name in docker-compose |
+| phpfpm_port               | 9000                 | the port that php-fpm is running on                                         |
+| phpfpm_memory_limit       | 256M                 | memory limit for php                                                        |
+| phpfpm_max_execution_time | 120                  | php execution time limit                                                    |
 
 ### 'craft' configuration handle
 
 #### Available environment variables:
 
-| name  |  default | description  |
-|---|---|---|
-|  document_root | /var/www/html/web | The document root for nginx  |
-|  phpfpm_host | php |  hostname for the php fpm server, usually the service name in docker-compose |
-|  phpfpm_port | 9000  | the port that php-fpm is running on |
+| name                      | default           | description                                                                 |
+|:--------------------------|:------------------|:----------------------------------------------------------------------------|
+| document_root             | /var/www/html/web | The document root for nginx                                                 |
+| phpfpm_host               | php               | hostname for the php fpm server, usually the service name in docker-compose |
+| phpfpm_port               | 9000              | the port that php-fpm is running on                                         |
+| phpfpm_memory_limit       | 256M              | memory limit for php                                                        |
+| phpfpm_max_execution_time | 120               | php execution time limit                                                    |
+

@@ -4,3 +4,5 @@
 export document_root=${document_root:-/var/www/html/web}
 export phpfpm_host=${phpfpm_host:-php}
 export phpfpm_port=${phpfpm_port:-9000}
+export phpfpm_memory_limit=${phpfpm_memory_limit:-256M}
+export phpfpm_max_execution_time=${phpfpm_max_execution_time:-120}

@@ -8,9 +8,10 @@ services:
       context: ../../
       dockerfile: ./Dockerfile
     environment:
-      config_handle: symfony4
+      config_handle: craft3
       phpfpm_host: php
       phpfpm_port: 9000
+      phpfpm_max_execution_time: 180
       document_root: /var/www/html/public
     ports:
       - 8803:80
